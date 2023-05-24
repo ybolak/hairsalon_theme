@@ -1,0 +1,186 @@
+/*===== Top page =====*/
+.home {
+  position: relative;
+  width: 1200px;
+  height: 750px;
+  margin-top: 30px;
+}
+
+.box-white {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: $color-box-white;
+  z-index: -1;
+}
+
+.box-red {
+  position: absolute;
+  top: 6%;
+  left: 5%;
+  width: 450px;
+  height: 450px;
+  background-color: $color-accent-1;
+}
+
+.box-beige {
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  width: 500px;
+  height: 500px;
+  background-color: $color-accent-2;
+}
+
+.hero-img {
+  position: absolute;
+  left: 15%;
+  bottom: 0;
+}
+
+.hero-text {
+  position: absolute;
+  right: 5%;
+}
+
+.hero.button-1 {
+  position: absolute;
+  right: 5%;
+  bottom: 20%;
+}
+
+/*===== Nav =====*/
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-main {
+  ul {
+    display: flex;
+
+    li {
+      margin: 0 10px;
+    }
+  }
+}
+
+/*===== Services =====*/
+.services-container {
+  display: flex;
+}
+
+.services-card {
+  position: relative;
+
+  h2 {
+    position: absolute;
+    top: 200px;
+  }
+
+  p {
+    margin-top: 40px;
+  }
+}
+
+/*===== Stylists =====*/
+.stylists-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// .stylists-card {
+//   display: table;
+
+//   img,
+//   h3,
+//   p {
+//     display: table-cell;
+//     vertical-align: middle;
+//   }
+// }
+
+/*===== Quotes =====*/
+.quotes,
+.quotes-container {
+  position: relative;
+}
+
+.quotes-content-left {
+  text-align: center;
+  width: 540px;
+  height: 530px;
+  border: $color-font-primary solid 2px;
+  padding-top: 70px;
+  h1 {
+    margin-bottom: 0;
+  }
+
+  p {
+    position: absolute;
+    left: 10%;
+    margin-top: 0;
+  }
+}
+
+.quotes-content-right {
+  width: 540px;
+  height: 530px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: $color-box-white;
+  text-align: center;
+
+  p {
+    text-align: left;
+    padding: 60px 80px;
+    margin: 0;
+  }
+}
+
+.quotes-arrow {
+  position: absolute;
+  top: 50%;
+}
+.quotes-arrow.left {
+  left: 3%;
+}
+
+.quotes-arrow.right {
+  right: 3%;
+}
+
+/*===== Footer =====*/
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-footer {
+  margin: 30px 0;
+
+  ul {
+    display: flex;
+    justify-content: center;
+
+    li {
+      padding: 10px;
+    }
+  }
+}
+
+.hours-content {
+  display: flex;
+
+  ul {
+    margin: 0;
+    &:last-child {
+      padding: 0 20px;
+    }
+  }
+}
+
+.footer-credit {
+  text-align: center;
+}

@@ -1,0 +1,75 @@
+* {
+  font-family: $font-family-primary;
+  color: $color-font-primary;
+}
+
+body {
+  background-color: $color-primary;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-family-title;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+footer {
+  h3 {
+    font-family: $font-family-primary;
+  }
+}
+
+.hero-text {
+  h1 {
+    font-size: 5rem;
+    &:first-child {
+      font-weight: lighter;
+    }
+  }
+  h2 {
+    font-size: 2.5rem;
+    font-weight: lighter;
+  }
+}
+
+.services,
+.stylists,
+.gallery {
+  h1 {
+    text-align: center;
+  }
+}
+
+.services-card {
+  h2 {
+    text-align: center;
+    font-weight: lighter;
+    color: $color-primary;
+  }
+}
+
+.stylists-card {
+  h3 {
+    font-weight: 400;
+  }
+}
+
+.quotes-content-left,
+.quotes-content-right {
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+.footer-credit {
+  color: $color-primary;
+  background-color: $color-thirdly;
+
+  i {
+    color: $color-primary;
+  }
+}
