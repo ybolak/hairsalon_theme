@@ -8,9 +8,6 @@ html {
   box-sizing: border-box;
 }
 
-nav {
-  margin: 20px 0;
-}
 header,
 .main-container,
 .footer-container {
@@ -22,15 +19,55 @@ section {
   margin: 150px 0;
 }
 
-footer {
-  background-color: $color-accent-2;
-}
-
 ul {
   list-style: none;
   padding: 0;
 }
 
+/*===== Button =====*/
+.button-1 {
+  font-size: 1.5rem;
+  color: $color-primary;
+  background-color: $color-accent-1;
+  padding: 30px 60px;
+  border: $color-accent-1 solid 2px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $color-accent-1;
+    background-color: $color-box-white;
+  }
+}
+
+.button-2 {
+  font-size: 1rem;
+  color: $color-accent-1;
+  background-color: transparent;
+  padding: 20px 50px;
+  border: solid 1.5px $color-accent-1;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $color-primary;
+    background-color: $color-accent-1;
+  }
+}
+
+/*===== Navigation =====*/
+nav {
+  margin: 20px 0;
+}
+
+.nav-main-item,
+.nav-footer-item {
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    color: $color-accent-1;
+  }
+}
+
+/*===== Home =====*/
 .hero-text {
   text-align: right;
   h1 {
@@ -41,23 +78,6 @@ ul {
       margin-top: 0;
     }
   }
-}
-
-/*===== Button =====*/
-.button-1 {
-  font-size: 1.5rem;
-  color: $color-primary;
-  background-color: $color-accent-1;
-  padding: 30px 60px;
-  border: 0;
-}
-
-.button-2 {
-  font-size: 1rem;
-  color: $color-accent-1;
-  background-color: transparent;
-  padding: 20px 50px;
-  border: solid 1.5px $color-accent-1;
 }
 
 /*===== Services =====*/
@@ -121,6 +141,10 @@ ul {
 }
 
 /*===== Footer =====*/
+footer {
+  background-color: $color-accent-2;
+}
+
 // reset css
 hr {
   height: 0;

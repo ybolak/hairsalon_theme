@@ -360,10 +360,6 @@ html {
   box-sizing: border-box;
 }
 
-nav {
-  margin: 20px 0;
-}
-
 header,
 .main-container,
 .footer-container {
@@ -375,23 +371,9 @@ section {
   margin: 150px 0;
 }
 
-footer {
-  background-color: #f0e0d0;
-}
-
 ul {
   list-style: none;
   padding: 0;
-}
-
-.hero-text {
-  text-align: right;
-}
-.hero-text h1:first-child {
-  margin-bottom: 0;
-}
-.hero-text h1:nth-child(2) {
-  margin-top: 0;
 }
 
 /*===== Button =====*/
@@ -400,7 +382,12 @@ ul {
   color: #fffaf2;
   background-color: #f0122d;
   padding: 30px 60px;
-  border: 0;
+  border: #f0122d solid 2px;
+  transition: all 0.3s ease;
+}
+.button-1:hover {
+  color: #f0122d;
+  background-color: #fff;
 }
 
 .button-2 {
@@ -409,6 +396,36 @@ ul {
   background-color: transparent;
   padding: 20px 50px;
   border: solid 1.5px #f0122d;
+  transition: all 0.3s ease;
+}
+.button-2:hover {
+  color: #fffaf2;
+  background-color: #f0122d;
+}
+
+/*===== Navigation =====*/
+nav {
+  margin: 20px 0;
+}
+
+.nav-main-item,
+.nav-footer-item {
+  transition: all 0.3s ease-out;
+}
+.nav-main-item:hover,
+.nav-footer-item:hover {
+  color: #f0122d;
+}
+
+/*===== Home =====*/
+.hero-text {
+  text-align: right;
+}
+.hero-text h1:first-child {
+  margin-bottom: 0;
+}
+.hero-text h1:nth-child(2) {
+  margin-top: 0;
 }
 
 /*===== Services =====*/
@@ -471,6 +488,10 @@ ul {
 }
 
 /*===== Footer =====*/
+footer {
+  background-color: #f0e0d0;
+}
+
 hr {
   height: 0;
   margin: 0;
@@ -525,6 +546,7 @@ footer h3 {
   font-weight: lighter;
 }
 .hero-text h2 {
+  font-family: "Focus Grotesk", sans-serif;
   font-size: 2.5rem;
   font-weight: lighter;
 }
